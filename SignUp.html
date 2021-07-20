@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+<meta charset="ISO-8859-1">
+<title>Signup page</title>
+<link rel="stylesheet" type="text/css" href="C:\Users\S DIGITAL COMPUTER\Desktop\cruiseship\style.css">
+</head>
+<body>
+<div class="loginbox1">
+<img src="C:\Users\S DIGITAL COMPUTER\Desktop\cruiseship\icon.png" class="icon"><br>
+<h1>USER REGISTER</h1>
+
+<form action="Uregs">
+
+<input type="hidden" name="user_id" id="user_id">
+<p>Name</p>
+<input type="text" name="name" id="uname" placeholder="Enter User Name" required>
+<p>Email-ID</p>
+<input type="text" name="email" id="uname" placeholder="Enter User Name" required>
+<p>Phone</p>
+<input type="text" name="phone" id="uname" placeholder="Enter User Name" required>
+<p>City</p>
+<input type="text" name="city" id="uname" placeholder="Enter User Name" required>
+<p>Password</p>
+<input type="password" name="pwd" id="pswd" placeholder="Enter Password" required>
+<br><br>
+<input type="submit" name="uname" id="uname" value="Signup">
+</form>
+
+<form action="C:\Users\S DIGITAL COMPUTER\Desktop\cruiseship\login.html">
+<input type="submit" name="uname" id="uname" value="Login">
+</form>
+<a href="#"><font size="3">Lost your password ?</font></a><br>
+<a href="#"><font size="3">Don't have an account ?</font></a><br><br><br>
+</form>
+</div>
+</body>
+</html>

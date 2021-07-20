@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--link rel="stylesheet" href="first.css"-->
+    <title>Registration Form</title>
+	<style>
+	div
+	{
+        height:680px;
+        width:993px;
+        border-color:black;
+        background-color:aliceblue;
+        margin:auto;
+        border-style:solid;
+	}
+	table
+	{
+		border-color:black;
+        text-align:left;
+        background-color:lightgrey;
+        border:3;
+	}
+	th
+	{
+     background-color: wheat;
+	}
+</style>
+<!--script>
+function d()
+{
+	document.f1.pri.value=document.f1.opt.value;
+	document.f1.hd.value=document.f1.opt.item(document.f1.opt.selectedIndex).text;
+	}
+</script-->
+</head>
+<body bgcolor="#0a2f5b" >
+
+	<form action="Booking" >
+		<div>
+<h3><b><center><font color="blue" face="times new roman">MAKE BOOKINGS</font></center></b></h3>
+<center><font color="blue" face="times new roman">BOOK YOUR SEAT NOW</font></center></b>
+<hr>
+
+
+<input type="hidden" name="booking_id" id="booking_id">
+<table align="center" cellpadding="6" width="80%">
+
+	
+<tr>
+	<td>Name<font color="red">*</font></td>
+	<td><input type="text" name="name" id="name" required placeholder="please enter name" autofocus></td>
+	
+	</tr>
+<tr>
+	<td>Email-id<font color="red">*</font></td>
+	<td><input type="email" name="email" required></td>
+	
+</tr>
+
+<tr>
+	<td>Mobile no.</td>
+	<td><input type="number" name="mobile" maxlength="10"></td>
+
+</tr>
+
+<tr>
+    <td>City</td>
+    <td><input type="text" name="city" id="city">
+    </td>
+   
+</tr>
+<br>
+	<tr>
+	<td>Pick-up Date<font color="red">*</font></td>
+	<td><input type="date" name="pdate" id="pdate" autofocus></td>
+	</tr>
+	<tr>
+	<td>Time<font color="red">*</font></td>
+	<td><input type="time" name="ptime" id="ptime" autofocus></td>
+	</tr>
+	<tr>
+	<td>Pick-up Address<font color="red">*</font></td>
+	<td><input type="text" name="address" id="address" autofocus></td></tr>
+	<tr>
+	<td>Cruise Terminal Departure<font color="red">*</font></td>
+	<td><input type="text" name="dter" id="dter" autofocus></td></tr>
+	<tr>
+	<td>Return Date<font color="red">*</font></td>
+	<td><input type="date" name="rdate" id="rdate" autofocus></td></tr>
+	<tr>
+	<td>Cruise Terminal Arrival<font color="red">*</font></td>
+	<td><input type="text" name="ater" id="ater" autofocus></td></tr>
+	<tr>
+	<td>Journey Type<font color="red">*</font></td>
+	<td><input type="text" name="jtype" id="jtype" autofocus></td></tr>
+	<tr>
+	<td>Number of passengers<font color="red">*</font></td>
+	<td><input type="text" name="no_of_pas" id="no_of_pas" autofocus></td></tr>
+	<tr>
+	<td>
+	<tr>
+	<td>Will a child/booster seat required</td>
+	<td><select name="cseat" id="cseat" autofocus>
+	<option value="yes">YES</option>	
+    <option value="no">NO</option></select></td></tr>
+    <tr>
+    <td>Additional message</td>
+    <td><input type="textarea" name="mesg" id="mesg"></td></tr>
+	</table>
+<br/>
+<center><input type="submit" name="uname" id="uname" value="CONFIRM BOOKING"><input type="reset" name="reset" value="Reset">
+</center><br/>
+</form>
+</body>
+</html>
+ 

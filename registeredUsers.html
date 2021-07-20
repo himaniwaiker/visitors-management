@@ -1,0 +1,179 @@
+<!--%@page import="dao.RegistrationFormDAO"%>
+<%@page import="java.util.List"%>
+<%@page import="dto.RegistrationFormDTO"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%-->
+    
+<html>
+<head>
+<title>Registered User</title>
+<style>
+div
+	{
+        height:50%;
+        width:60%;
+        
+     
+	}
+	table
+	{
+		border-color:black;
+        text-align:left;
+        background-color:lightgrey;
+        border:3;
+	}
+	th
+	{
+     background-color: wheat;
+	}
+
+.h2
+{
+font-family: algerian;
+background-color: white;
+}
+	
+.page
+{
+width:100%;
+height:1030px;
+
+}
+.headerpart
+{
+width:100%;
+height:40%;               
+border-style:groove;
+background-color:blue;
+position:relative;
+text-align:center;
+color:black;
+		
+}
+.name
+{
+position:absolute;
+top:60%;
+left:63%;
+font-size:50px;
+font-family: arial round;
+transform:translate(-50%, -50%);
+color: white;
+}
+.links
+{
+width:100%;
+height:30px;
+border-style:groove;
+margin-top:5px;
+background-color:lightgray;
+}
+.bodypart
+{
+width:100%;
+height:400px;
+margin-top:5px;
+}
+.bodypart .imagepart
+{
+width:1050px;
+height:100%;
+border-style:groove;
+display:inline-block;
+background-color:cumulous;
+}
+.bodypart .searchpart
+{
+width:250px;
+height:100%;
+border-style:groove;
+float:left;
+background-color:#1261a0;
+	}
+	
+	.links a
+	{
+		color:black;
+		text-decoration:none;
+	}   
+	.links a:hover
+	{
+		color:skyblue;
+		background-color:white;
+	}
+	
+	.button {
+  background-color:cornflowerblue;
+  border: none;
+  color: white;
+  padding: 5px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: lightgray}
+
+th {
+  background-color: cornflowerblue;
+  color: white;
+}
+	
+		@-webkit-keyframe blink{67%{opacity:0;}}
+		@-moz-keyframes blink{67%{opacity:0;}}
+		@-0-keyframes blink{67%{opacity:0;}}
+		@keyframes blink{67%{opacity:0;}}
+
+</style>
+</head>
+<body bgcolor="#0a2f5b">
+    <!--div class="page"-->
+	<div class="headerpart">
+	<img id="image" src="room.jpg" style="width:100%;height:100%;">
+
+
+<script>
+
+var imageSources = ["Ship.jpg","room.jpg", "staterooms.jpg", "outer.jpg", "waooh.jpg"]
+
+var index = 0;
+setInterval (function(){
+  if (index === imageSources.length) {
+    index = 0;
+  }
+  document.getElementById("image").src = imageSources[index];
+  index++;
+} , 2000);
+
+</script>
+	
+    <div class="bodypart">
+    <div class="searchpart">
+    	
+<img src="icon.png" height="100px" width="100px"/>
+
+<a href="C:\Users\S DIGITAL COMPUTER\Desktop\cruiseship\book.html"><button class="button" type="submit">MAKE BOOKINGS</button></a><br>
+<a href="C:\Users\S DIGITAL COMPUTER\Desktop\cruiseship\cancel.html"><button class="button" type="submit">CANCEL BOOKINGS</button></a><br>
+<a href="pf.jsp"><button class="button" type="submit">VIEW PROFILE</button></a><br>
+<a href="C:\Users\S DIGITAL COMPUTER\Desktop\cruiseship\view.html"><button class="button" type="submit">VIEW BOOKINGS</button></a><br>
+<a href="Logout"><button class="button" type="submit">&nbsp;&nbsp;Logout &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br></a>
+
+</div></div>
+</div>
+
+&nbsp;</div>
+</body>
+</html>
+
